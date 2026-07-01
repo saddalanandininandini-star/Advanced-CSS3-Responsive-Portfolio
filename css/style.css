@@ -1,0 +1,388 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root{
+
+    --primary:#2563eb;
+    --secondary:#1e40af;
+
+    --background:#f8fafc;
+    --card:#ffffff;
+
+    --text:#1f2937;
+    --light:#ffffff;
+
+    --shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+/* Dark Theme */
+
+body.dark{
+
+    --background:#0f172a;
+
+    --card:#1e293b;
+
+    --text:#ffffff;
+
+    --light:#0f172a;
+
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    transition:.4s;
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+
+    width:100%;
+
+    background:var(--card);
+
+    box-shadow:var(--shadow);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.navbar{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:var(--primary);
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.nav-links a{
+
+    color:var(--text);
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover,
+
+.nav-links .active{
+
+    color:var(--primary);
+
+}
+
+/* ===========================
+   THEME BUTTON
+=========================== */
+
+#theme-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#theme-btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.hero-content h3{
+
+    color:var(--primary);
+
+    font-size:24px;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+
+    margin:10px 0;
+
+}
+
+.hero-content h2{
+
+    color:#666;
+
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:350px;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-3px);
+
+}
+
+.secondary{
+
+    background:#64748b;
+
+}
+
+.secondary:hover{
+
+    background:#475569;
+
+}
+
+/* ===========================
+   SECTION TITLES
+=========================== */
+
+section{
+
+    padding:80px 0;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:36px;
+
+    margin-bottom:40px;
+
+    color:var(--primary);
+
+}
+
+/* ===========================
+   PAGE TITLE
+=========================== */
+
+.page-title{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+.page-title h1{
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+}
+
+.page-title p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
